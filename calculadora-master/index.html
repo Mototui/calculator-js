@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="shortcut icon" href="/assets/icons/math-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Basic Calculator</h1>
+    <div class="calculator">
+        <div class="reset-show">
+            <div class="clean">
+                <button class="btn-clean" data-delete>C</button>
+            </div>
+            <div class="result" id="result"></div>
+        </div>
+        
+        <div class="buttons" id="buttons">
+            <div class="first-line">
+                <button class="btn-num" data-number>1</button>
+                <button class="btn-num" data-number>2</button>
+                <button class="btn-num" data-number>3</button>
+                <button class="btn-op btn-add" data-operation>+</button>
+            </div>
+            <div class="second-line">
+                <button class="btn-num" data-number>4</button>
+                <button class="btn-num" data-number>5</button>
+                <button class="btn-num" data-number>6</button>
+                <button class="btn-op" data-operation>-</button>
+            </div>
+            <div class="third-line">
+                <button class="btn-num" data-number>7</button>
+                <button class="btn-num" data-number>8</button>
+                <button class="btn-num" data-number>9</button>
+                <button class="btn-op" data-operation>*</button>
+            </div>
+            <div class="four-line">
+                <button class="btn-num" data-number>0</button>
+                <button class="btn-num" data-number>.</button>
+                <button class="btn-op btn-equal" data-equals>=</button>
+                <button class="btn-op" data-operation>/</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>
+          <span class="built">Built with </span><span style="color: red;">&#x2661;</span> <span class="by">by</span> 
+          <a href="https://twitter.com/Mototui10" target="_blank"
+            >Mototui</a>
+        </p>
+      </footer>
+      <script src="index.js"></script>
+</body>
+
+</html>
