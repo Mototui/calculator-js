@@ -35,12 +35,20 @@ operationButtons.forEach(button => {
 })
 
 equalsButton.addEventListener('click', () => {
-    let total = Math.round(eval(result.innerText) * 100) / 100
-    if(total === Infinity || total === NaN){
-        result.innerText = ''
-    }else{
-        result.innerText = total
-    }
     
+    try {
+        let total = Math.round(eval(result.innerText) * 100) / 100
+        if(total === Infinity || total == NaN){
+            result.innerText = ''
+        }else{
+            result.innerText = total
+        } 
+
+    } catch (e) {
+        if (e instanceof SyntaxError) {
+            alert("Try again");
+            result.innerText = ''
+        }
+    }
 })
 
